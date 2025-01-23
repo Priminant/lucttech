@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account</title>
+    <style>
+*	{
+Margin: 0;
+            Padding: 0;
+            Box-sizing: border-box;
+        }
+
+        Body {
+            Font-family: Arial, sans-serif;
+            Background-color: #f4f4f9;
+            Color: #333;
+            Margin: 0;
+            Padding: 20px;
+        }
+
+        .container {
+            Display: flex;
+            Max-width: 900px;
+            Margin: 0 auto;
+            Background: #fff;
+            Border-radius: 10px;
+            Overflow: hidden;
+            Box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar {
+            Width: 25%;
+            Background-color: #f8f9fa;
+            Padding: 20px;
+            Text-align: center;
+        }
+
+        .sidebar img {
+            Width: 100px;
+            Height: 100px;
+            Border-radius: 50%;
+            Margin-bottom: 10px;
+            Border: 3px solid #3498db;
+        }
+
+        .sidebar h3 {
+            Font-size: 18px;
+            Margin-bottom: 20px;
+            Color: #333;
+        }
+
+        .sidebar ul {
+            List-style: none;
+            Padding: 0;
+        }
+
+        .sidebar ul li {
+            Margin-bottom: 15px;
+        }
+
+        .sidebar ul li a {
+            Text-decoration: none;
+            Color: #333;
+            Font-size: 16px;
+            Padding: 10px 15px;
+            Display: block;
+            Border-radius: 5px;
+            Transition: 0.3s;
+        }
+
+        .sidebar ul li a.active,
+        .sidebar ul li a:hover {
+            Background-color: #3498db;
+            Color: #fff;
+        }
+
+        .main-content {
+            Flex: 1;
+            Padding: 20px;
+        }
+
+        .main-content h2 {
+            Font-size: 24px;
+            Margin-bottom: 20px;
+        }
+
+        .form-group {
+            Margin-bottom: 15px;
+        }
+
+        .form-group label {
+            Display: block;
+            Font-size: 14px;
+            Margin-bottom: 5px;
+            Color: #555;
+        }
+
+        .form-group input {
+            Width: 100%;
+            Padding: 10px;
+            Border: 1px solid #ccc;
+            Border-radius: 5px;
+            Font-size: 14px;
+        }
+
+        .form-group input:focus {
+            Border-color: #3498db;
+            Outline: none;
+        }
+
+        .btn {
+            Background-color: #3498db;
+            Color: #fff;
+            Border: none;
+            Padding: 10px 20px;
+            Font-size: 16px;
+            Border-radius: 5px;
+            Cursor: pointer;
+            Transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            Background-color: #2980b9;
+        }
+
+        .form-actions {
+            Margin-top: 20px;
+            Display: flex;
+            Justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      
+        <div class="sidebar">
+            <img src="images/avatar.jpg" alt="Profile Picture">
+            <h3>John Doe</h3>
+            <ul>
+                <li><a href="my-profile.html" class="active">Dashboard</a></li>
+                <li><a href="account-details.html">Account Details</a></li>
+                <li><a href="change-password.html">Change Password</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <h2>Account Settings</h2>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder=support@profilepress.net required>
+                </div>
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="surname" required>
+                </div>
+                <div class="form-group">
+                    <label for="website">Website</label>
+                    <input type="url" id="website" name="website" placeholder=https://profilepress.net>
+                </div>
+                <div class="form-group">
+                    <label for="facebook">Facebook</label>
+                    <input type="url" id="facebook" name="facebook" placeholder=https://www.facebook.com/profilepress>
+                </div>
+                <div class="form-group">
+                    <label for="twitter">Twitter</label>
+                    <input type="url" id="twitter" name="twitter" placeholder=https://twitter.com/profilepress>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn">Save Changes</button>
+                    <button type="reset" class="btn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

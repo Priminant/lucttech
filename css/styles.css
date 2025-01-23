@@ -1,0 +1,316 @@
+Body, html {
+    Margin: 0;
+    Padding: 0;
+    Font-family: Arial, sans-serif;
+}
+
+
+Header {
+    Position: absolute;
+    Top: 0;
+    Width: 100%;
+    z-index: 100;
+}
+.logo-img {
+    Width: 90px;
+    Height: auto;
+    margin-left: -49px;
+    margin-bottom 100px;
+}
+.navbar {
+    Display: flex;
+    Justify-content: space-between;
+    Align-items: center;
+    Padding: 10px 50px;
+    Background-color: rgba(0, 0, 0, 0.6); 
+}
+
+.nav-left {
+    List-style: none;
+    Margin: 0;
+    Padding: 0;
+    Display: flex;
+    Align-items: center;
+    Margin-left: 15px;
+}
+
+.nav-left a {
+    Text-decoration: none;
+    Color: white;
+    Font-weight: bold;
+    Padding: 10px 15px;
+    Border-radius: 5px;
+    Transition: background-color 0.3s ease;
+}
+
+.nav-left a:hover {
+    Background-color: #ff8800;
+    Color: #fff;
+}
+
+
+.nav-links {
+    List-style: none;
+    Display: flex;
+    Gap: 15px;
+}
+
+.nav-links a {
+  Text-decoration: none;
+    Color: white;
+    Font-weight: bold;
+    Padding: 10px 15px;
+    Border-radius: 5px;
+    Transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    Background-color: #ff8800;
+    Color: #fff;
+}
+
+.login-button {
+    Padding: 10px 20px;
+    Background: linear-gradient(135deg, #ff8800, #ff006e);
+    Color: white;
+    Border-radius: 25px;
+    Text-decoration: none;
+    Font-weight: bold;
+    Font-size: 16px;
+    Box-shadow: 0 8px 15px rgba(255, 0, 110, 0.5);
+    Transition: all 0.3s ease-in-out;
+}
+
+.hero {
+    Position: relative;
+    Height: 100vh;
+    Overflow: hidden;
+}
+
+.slider {
+    Position: absolute;
+    Width: 100%;
+    Height: 100%;
+    Display: flex;
+    Animation: slide 25s infinite;
+}
+
+.slide {
+    Min-width: 100%;
+    Height: 100%;
+    Background-size: cover;
+    Background-position: center;
+}
+
+.hero-content {
+    Position: absolute;
+    Top: 50%;
+    Left: 50%;
+    Transform: translate(-50%, -50%);
+    Color: white;
+    Text-align: center;
+}
+
+.hero-content h1 {
+    Font-size: 3em;
+    Margin-bottom: 20px;
+}
+
+.hero-content p {
+    Font-size: 1.2em;
+    Margin-bottom: 30px;
+}
+
+.cta-button {
+    Padding: 10px 20px;
+    Background-color: #ff8800;
+    Color: white;
+    Text-decoration: none;
+    Border-radius: 5px;
+}
+
+
+@keyframes slide {
+    0%, 20% { transform: translateX(0); }
+    25%, 45% { transform: translateX(-100%); }
+    50%, 70% { transform: translateX(-200%); }
+    75%, 95% { transform: translateX(-300%); }
+    100% { transform: translateX(-400%); }
+}
+
+
+.features {
+    Display: flex;
+    Justify-content: center;
+    Gap: 30px;
+    Padding: 50px 20px;
+    Background-color: #f0f0f0;
+    Text-align: center;
+}
+
+.card {
+    Max-width: 300px;
+    Background: white;
+    Box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    Border-radius: 10px;
+    Overflow: hidden;
+    Transition: transform 0.3s;
+}
+
+.card:hover {
+    Transform: translateY(-10px);
+}
+
+.card img {
+    Width: 100%;
+    Height: 200px;
+    Object-fit: cover;
+}
+
+.card h3 {
+    Font-size: 1.5em;
+    Margin: 10px 0;
+    Padding: 0 15px;
+}
+
+.card p {
+    Font-size: 1em;
+    Padding: 0 15px 20px 15px;
+    Color: #666;
+}
+.footer {
+  Background-color: #000;
+  Color: #fff;
+  Padding: 40px 20px;
+  Font-size: 14px;
+}
+
+.footer-container {
+  Display: flex;
+  Justify-content: space-between;
+  Flex-wrap: wrap;
+}
+
+.footer-logo h2 {
+  Font-size: 24px;
+  Margin: 0 0 20px 0;
+}
+
+.social-icons a {
+  Margin-right: 10px;
+}
+
+
+.social-icons {
+    Display: flex;
+    Gap: 10px;
+    Justify-content: flex-start;
+}
+
+.social-icon {
+    Width: 30px;
+    Height: 30px;
+    Border-radius: 50%;
+    Transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    Transform: scale(1.2);
+}
+
+.feature-button {
+    Display: inline-block;
+    Margin-top: 10px;
+    Padding: 10px 15px;
+    Background-color: #ff8800;
+    Color: white;
+    Text-decoration: none;
+    Border-radius: 5px;
+    Font-size: 0.9em;
+    Font-weight: bold;
+}
+
+.feature-button:hover {
+    Background-color: #d62828;
+}
+
+.footer-links {
+  Display: flex;
+}
+
+.column {
+  Margin-right: 40px;
+}
+
+.column h3 {
+  Margin-bottom: 10px;
+  Font-size: 16px;
+  Font-weight: bold;
+}
+
+.column ul {
+  List-style: none;
+  Padding: 0;
+}
+
+.column ul li {
+  Margin-bottom: 8px;
+}
+
+.column ul li a {
+  Color: #fff;
+  Text-decoration: none;
+}
+
+.column ul li a:hover {
+  Text-decoration: underline;
+}
+
+.footer-subscribe {
+  Text-align: right;
+}
+
+.footer-subscribe p {
+  Margin-bottom: 10px;
+}
+
+.footer-subscribe button {
+  Background-color: #ff8800;
+  Color: #fff;
+  Border-radius: 5px;
+  Border: none;
+  Padding: 10px 20px;
+  Cursor: pointer;
+}
+
+.footer-subscribe button:hover {
+  Background-color: #d62828;
+}
+
+.footer-bottom {
+  Display: flex;
+  Justify-content: space-between;
+  Align-items: center;
+  Margin-top: 20px;
+  Border-top: 1px solid #333;
+  Padding-top: 20px;
+  Flex-wrap: wrap;
+}
+
+.footer-lippert {
+  Color: #fff;
+}
+
+.footer-policy-links a {
+  Margin-right: 15px;
+  Color: #fff;
+  Text-decoration: none;
+}
+
+.footer-policy-links a:hover {
+  Text-decoration: underline;
+}
+
+.footer-copyright {
+  Color: #fff;
+}

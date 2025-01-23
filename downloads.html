@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUCT Tech Hub – Downloads</title>
+        <style>
+        Body {
+            Font-family: Arial, sans-serif;
+            Margin: 0;
+            Padding: 0;
+            Background-color: #f4f4f9;
+            Color: #333;
+        }
+        
+        Header {
+            Background-color: #2c3e50;
+            Color: white;
+            Padding: 15px;
+            Text-align: center;
+        }
+
+        Header nav ul {
+            List-style: none;
+            Padding: 0;
+            Margin: 0;
+        }
+
+        Header nav ul li {
+            Display: inline;
+            Margin: 0 15px;
+        }
+
+        Header nav ul li a {
+            Color: white;
+            Text-decoration: none;
+            Font-weight: bold;
+        }
+
+        Header nav ul li a:hover,
+        Header nav ul li a.active {
+            Color: #e67e22;
+        }
+
+        Main {
+            Padding: 20px;
+            Max-width: 1200px;
+            Margin: 0 auto;
+        }
+
+        .intro, .categories, .search-filter, .installation-instructions, .system-requirements, 
+        .version-info, .terms-conditions, .support, .contact-feedback {
+            Margin-bottom: 30px;
+        }
+
+        H1, h2, h3 {
+            Color: #2c3e50;
+        }
+
+        .category ul {
+            List-style: none;
+            Padding: 0;
+        }
+
+        .category ul li {
+            Margin: 5px 0;
+        }
+
+        .category ul li a {
+            Text-decoration: none;
+            Color: #3498db;
+        }
+
+        .category ul li a:hover {
+            Color: #2980b9;
+        }
+
+        .search-filter form {
+            Margin-top: 10px;
+        }
+
+        .search-filter input {
+            Padding: 10px;
+            Width: 70%;
+            Border: 1px solid #ddd;
+            Border-radius: 5px;
+        }
+
+        .search-filter button {
+            Padding: 10px;
+            Background-color: #3498db;
+            Color: white;
+            Border: none;
+            Border-radius: 5px;
+            Cursor: pointer;
+        }
+
+        .search-filter button:hover {
+            Background-color: #2980b9;
+        }
+
+        Footer {
+            Background-color: #2c3e50;
+            Color: white;
+            Text-align: center;
+            Padding: 15px;
+            Position: fixed;
+            Bottom: 0;
+            Width: 100%;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/Home"</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact>Contact</a></li>
+                <li><a href="/downloads" class="active">Downloads</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h1>Welcome to the LUCT Tech Hub Downloads Page</h1>
+            <p>Here you can find all the tools, resources, and documentation provided by the Tech Hub. Browse through the categories below to find what you need.</p>
+        </section>
+
+        <section class="categories">
+            <h2>Available Downloads</h2>
+            <div class="category">
+                <h3>Software Tools</h3>
+                <ul>
+                    <li><a href="/downloads/software/tool1.zip">Tool 1 (v1.0) – Download</a></li>
+                    <li><a href="/downloads/software/tool2.exe">Tool 2 (v2.3) – Download</a></li>
+                    <li><a href="/downloads/software/tool3.tar.gz">Tool 3 (v1.5) – Download</a></li>
+                </ul>
+            </div>
+
+            <div class=”category”>
+                <h3>Documentation</h3>
+                <ul>
+                    <li><a href="/downloads/docs/user-guide.pdf">User Guide – Download</a></li>
+                    <li><a href="/downloads/docs/installation-manual.pdf">Installation Manual – Download</a></li>
+                    <li><a href="/downloads/docs/release-notes.pdf">Release Notes – Download</a></li>
+                </ul>
+            </div>
+
+            <div class="category">
+                <h3>Templates/Resources</h3>
+                <ul>
+                    <li><a href="/downloads/resources/template1.docx">Template 1 – Download</a></li>
+                    <li><a href="/downloads/resources/sample-code.zip">Sample Code – Download</a></li>
+                </ul>
+            </div>
+
+            <div class="category">
+                <h3>Updates & Newsletters</h3>
+                <ul>
+                    <li><a href="/downloads/newsletter/june2025.pdf">June 2025 Newsletter – Download</a></li>
+                    <li><a href="/downloads/newsletter/may2025.pdf">May 2025 Newsletter – Download</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="search-filter">
+            <h2>Search or Filter Downloads</h2>
+            <form action="/search-downloads" method="get">
+                <input type="text" name="query" placeholder="Search for downloads…" required>
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <section class="installation-instructions">
+            <h2>Installation Guides</h2>
+            <p>Follow the instructions below to install the software tools:</p>
+            <ul>
+                <li>Tool 1: <a href="/downloads/docs/tool1-installation.pdf" target="_blank">Installation Guide (PDF)</a></li>
+                <li>Tool 2: <a href="/downloads/docs/tool2-installation.pdf" target="_blank">Installation Guide (PDF)</a></li>
+            </ul>
+        </section>
+
+        <section class="system-requirements">
+            <h2>System Requirements</h2>
+            <p>Before downloading, make sure your system meets the following requirements:</p>
+            <ul>
+                <li>Windows 10 or later</li>
+                <li>At least 4GB RAM</li>
+                <li>2GB of free disk space</li>
+            </ul>
+        </section>
+
+        <section class=”version-info”>
+            <h2>Version Information</h2>
+            <p>Make sure you are downloading the correct version:</p>
+            <ul>
+                <li>Tool 1 – v1.0 (Latest)</li>
+                <li>Tool 2 – v2.3</li>
+                <li>Tool 3 – v1.5</li>
+            </ul>
+        </section>
+
+        <section class="terms-conditions:>
+            <h2>Terms & Conditions</h2>
+            <p>By downloading, you agree to our <a href="/terms">Terms and Conditions</a>.</p>
+        </section>
+
+        <section class="support">
+            <h2>Need Help?</h2>
+            <p>If you encounter any issues, check our <a href="/support">Support Page</a> or <a href="/contact">Contact Us</a> for further assistance.</p>
+        </section>
+
+        <section class="contact-feedback">
+            <h2>Provide Feedback</h2>
+            <p>Help us improve by providing your feedback on the downloads page. <a href="/feedback">Click here</a> to submit your comments.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 LUCT Tech Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>

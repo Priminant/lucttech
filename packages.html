@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptops – Packages</title>
+    <style>
+*	{
+            Margin: 0;
+            Padding: 0;
+            Box-sizing: border-box;
+            Font-family: Arial, sans-serif;
+        }
+
+        Body {
+            Background-color: #f4f4f9;
+        }
+
+        Header {
+            Position: fixed;
+            Top: 0;
+            Width: 100%;
+            z-index: 100;
+        }
+
+.logo-img {
+    Width: 90px;
+    Height: auto;
+    margin-left: -49px;
+    margin-bottom 100px;
+}
+.navbar {
+    Display: flex;
+    Justify-content: space-between;
+    Align-items: center;
+    Padding: 10px 50px;
+    Background-color: rgba(0, 0, 0, 0.6); 
+}
+
+.nav-left {
+    List-style: none;
+    Margin: 0;
+    Padding: 0;
+    Display: flex;
+    Align-items: center;
+    Margin-left: 15px;
+}
+
+.nav-left a {
+    Text-decoration: none;
+    Color: white;
+    Font-weight: bold;
+    Padding: 10px 15px;
+    Border-radius: 5px;
+    Transition: background-color 0.3s ease;
+}
+
+.nav-left a:hover {
+    Background-color: #ff8800;
+    Color: #fff;
+}
+
+
+.nav-links {
+    List-style: none;
+    Display: flex;
+    Gap: 15px;
+}
+
+.nav-links a {
+  Text-decoration: none;
+    Color: white;
+    Font-weight: bold;
+    Padding: 10px 15px;
+    Border-radius: 5px;
+    Transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    Background-color: #ff8800;
+    Color: #fff;
+}
+
+.login-button {
+    Padding: 10px 20px;
+    Background: linear-gradient(135deg, #ff8800, #ff006e);
+    Color: white;
+    Border-radius: 25px;
+    Text-decoration: none;
+    Font-weight: bold;
+    Font-size: 16px;
+    Box-shadow: 0 8px 15px rgba(255, 0, 110, 0.5);
+    Transition: all 0.3s ease-in-out;
+}
+
+        .sub-nav {
+            Background-color: #444;
+            Color: white;
+            Padding: 10px 20px;
+            Display: flex;
+            Justify-content: center;
+        }
+
+        .sub-nav a {
+            Color: white;
+            Text-decoration: none;
+            Margin: 0 10px;
+            Padding: 5px 10px;
+            Border-radius: 4px;
+        }
+
+        .sub-nav a:hover {
+            Background-color: #555;
+        }
+
+        .sub-nav a.active {
+            Text-decoration: underline;
+            Font-weight: bold;
+        }
+
+        .products-container {
+            Display: grid;
+            Grid-template-columns: repeat(3, 1fr);
+            Gap: 20px;
+            Padding: 160px 20px 20px; 
+        }
+
+        .product-card {
+            Background-color: white;
+            Border: 1px solid #ddd;
+            Border-radius: 8px;
+            Overflow: hidden;
+            Box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            Text-align: center;
+            Padding: 20px;
+        }
+
+        .product-card img {
+            Width: 100%;
+            Height: 150px;
+            Object-fit: cover;
+        }
+
+        .product-card h3 {
+            Font-size: 1.2em;
+            Margin: 10px 0;
+            Color: #333;
+        }
+
+        .product-card p {
+            Margin: 5px 0;
+            Font-size: 0.9em;
+            Color: #666;
+        }
+
+        .product-card .price {
+            Font-size: 1.2em;
+            Color: #28a745;
+            Margin: 10px 0;
+        }
+
+        .product-card .add-to-cart {
+            Background-color: #007bff;
+            Color: white;
+            Border: none;
+            Border-radius: 5px;
+            Padding: 10px 15px;
+            Cursor: pointer;
+            Font-size: 1em;
+        }
+
+        .product-card .add-to-cart:hover {
+            Background-color: #0056b3;
+        }
+.footer {
+  Background-color: #000;
+  Color: #fff;
+  Padding: 40px 20px;
+  Font-size: 14px;
+}
+
+.footer-container {
+  Display: flex;
+  Justify-content: space-between;
+  Flex-wrap: wrap;
+}
+
+.footer-logo h2 {
+  Font-size: 24px;
+  Margin: 0 0 20px 0;
+}
+
+.social-icons a {
+  Margin-right: 10px;
+}
+
+
+.social-icons {
+    Display: flex;
+    Gap: 10px;
+    Justify-content: flex-start;
+}
+
+.social-icon {
+    Width: 30px;
+    Height: 30px;
+    Border-radius: 50%;
+    Transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    Transform: scale(1.2);
+}
+
+.feature-button {
+    Display: inline-block;
+    Margin-top: 10px;
+    Padding: 10px 15px;
+    Background-color: #ff8800;
+    Color: white;
+    Text-decoration: none;
+    Border-radius: 5px;
+    Font-size: 0.9em;
+    Font-weight: bold;
+}
+
+.feature-button:hover {
+    Background-color: #d62828;
+}
+
+.footer-links {
+  Display: flex;
+}
+
+.column {
+  Margin-right: 40px;
+}
+
+.column h3 {
+  Margin-bottom: 10px;
+  Font-size: 16px;
+  Font-weight: bold;
+}
+
+.column ul {
+  List-style: none;
+  Padding: 0;
+}
+
+.column ul li {
+  Margin-bottom: 8px;
+}
+
+.column ul li a {
+  Color: #fff;
+  Text-decoration: none;
+}
+
+.column ul li a:hover {
+  Text-decoration: underline;
+}
+
+.footer-subscribe {
+  Text-align: right;
+}
+
+.footer-subscribe p {
+  Margin-bottom: 10px;
+}
+
+.footer-subscribe button {
+  Background-color: #ff8800;
+  Color: #fff;
+  Border-radius: 5px;
+  Border: none;
+  Padding: 10px 20px;
+  Cursor: pointer;
+}
+
+.footer-subscribe button:hover {
+  Background-color: #d62828;
+}
+
+.footer-bottom {
+  Display: flex;
+  Justify-content: space-between;
+  Align-items: center;
+  Margin-top: 20px;
+  Border-top: 1px solid #333;
+  Padding-top: 20px;
+  Flex-wrap: wrap;
+}
+
+.footer-lippert {
+  Color: #fff;
+}
+
+.footer-policy-links a {
+  Margin-right: 15px;
+  Color: #fff;
+  Text-decoration: none;
+}
+
+.footer-policy-links a:hover {
+  Text-decoration: underline;
+}
+
+.footer-copyright {
+  Color: #fff;
+}
+
+    </style>
+</head>
+<body>
+ <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="icons/LOGO.png" alt="LimkoTech Logo" class="logo-img">
+            </div>
+            <ul class="nav-left">
+                <li><a href="my-profile.html">My Account</a></li>
+            </ul>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="register.html">Sign Up</a></li>
+                <li><a href="login.html" class="login-button">Log In</a></li>
+            </ul>
+        </nav>
+    
+        <div class="sub-nav">
+            <a href="packages.html" class="active">Laptops</a>
+            <a href="desktops.html">Desktops</a>
+            <a href="accessories.html">Accessories</a>
+            <a href="iphones.html">iPhones</a>
+            <a href="smartphones.html">Smartphones</a>
+            <a href="tablets.html">Tablets</a>
+        </div>
+    </header>
+
+    <div class="products-container">
+        <div class="product-card">
+            <img src="images/laptop1.jpg" alt="Gaming Laptop">
+            <h3>Gaming Laptop</h3>
+            <p>High-performance laptop for gamers.</p>
+            <p class="price">$1,200</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="images/laptop2.jpg" alt="Work Laptop">
+            <h3>Work Laptop</h3>
+            <p>Reliable laptop for professionals.</p>
+            <p class="price">$900</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="images/laptop3.jpg" alt="Student Laptop">
+            <h3>Student Laptop</h3>
+            <p>Affordable laptop for students.</p>
+            <p class="price">$600</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+    <div class="products-container">
+        <div class="product-card">
+            <img src="images/laptop4.jpg" alt="Gaming Laptop">
+            <h3>Gaming Laptop</h3>
+            <p>High-performance laptop for gamers.</p>
+            <p class="price">$1,200</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="images/laptop5.jpg" alt="Work Laptop">
+            <h3>Work Laptop</h3>
+            <p>Reliable laptop for professionals.</p>
+            <p class="price">$900</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="images/laptop6.jpg" alt="Student Laptop">
+            <h3>Student Laptop</h3>
+            <p>Affordable laptop for students.</p>
+            <p class="price">$600</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>LUCT Tech Hub</h2>
+                <div class="social-icons">
+                    <a href=https://facebook.com target="_blank"><img src="icons/facebook-icon.png" alt="Facebook" class="social-icon"></a>
+                    <a href=https://instagram.com target="_blank"><img src="icons/instagram-icon.jpg" alt="Instagram" class="social-icon"></a>
+                    <a href=https://twitter.com target="_blank"><img src="icons/X-icon.jpg" alt="Twitter" class="social-icon"></a>
+                    <a href=https://youtube.com target="_blank"><img src="icons/youtube-icon.png" alt="YouTube" class="social-icon"></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                        <li><a href="downloads.html">Downloads</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>LUCT Tech Hub</h3>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="newsroom.html">Newsroom</a></li>
+                        <li><a href="affiliates.html">Affiliates</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-subscribe">
+                <p>Stay up to date on the latest from LUCT Tech Hub</p>
+                <button><a href="register.html" class="cta-button">Sign Up</a></button>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-lippert">
+                <span>VISIONBYTE</span>
+            </div>
+            <div class="footer-policy-links">
+                <a href="terms-and-conditions.html">Terms and Conditions</a>
+                <a href="warranty-shipping-reutrns.html">Shipping, Returns & Warranty</a>
+                <a href="trademark-copyright-guidelines.html">Trademark and Copyright Guidelines</a>
+                <a href="business-partner-code-of-conduct.html">Business Partner Code of Conduct</a>
+            </div>
+            <div class="footer-copyright">
+                <span>&copy; 2025 Copyright</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

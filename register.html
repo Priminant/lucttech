@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <style>
+    
+*	{
+            Margin: 0;
+            Padding: 0;
+            Box-sizing: border-box;
+            Font-family: Arial, sans-serif;
+        }
+
+        Body, html {
+            Height: 100%;
+        }
+
+        .register-container {
+            Height: 100vh;
+            Display: flex;
+            Justify-content: center;
+            Align-items: center;
+            Position: relative;
+            Overflow: hidden;
+        }
+
+        .register-container::before {
+            Content: '';
+            Position: absolute;
+            Top: 0;
+            Left: 0;
+            Width: 100%;
+            Height: 100%;
+            Background: linear-gradient(135deg, #f0f8ff 50%, #696969 50%);
+            z-index: -1;
+        }
+
+       
+        .register-content {
+            Background-color: white;
+            Padding: 40px;
+            Width: 400px;
+            Border-radius: 8px;
+            Box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            Text-align: center;
+        }
+
+        .register-content h1 {
+            Margin-bottom: 20px;
+            Font-size: 2em;
+            Color: #333;
+        }
+
+        .form-group {
+            Margin-bottom: 20px;
+            Text-align: left;
+        }
+
+        .form-group label {
+            Display: block;
+            Font-size: 0.9em;
+            Color: #555;
+            Margin-bottom: 5px;
+        }
+
+.form-group input {
+            Width: 100%;
+            Padding: 10px 10px 10px 40px; 
+            Border: none;
+            Border-bottom: 2px solid #ddd;
+            Outline: none;
+            Font-size: 1em;
+            Transition: border-color 0.3s;
+        }
+
+        .form-group input:focus {
+            Border-bottom: 2px solid #ff8800;
+        }
+
+        .form-group .input-icon {
+            Position: absolute;
+            Left: 10px;
+            Top: 60%;
+            Transform: translateY(-50%);
+            Width: 20px;
+            Height: 20px;
+        }
+        .register-btn {
+            Background-color: #ff8800;
+            Color: white;
+            Border: none;
+            Border-radius: 5px;
+            Padding: 10px 15px;
+            Cursor: pointer;
+            Font-size: 1em;
+            Width: 100%;
+            Margin-top: 10px;
+        }
+
+        .register-btn:hover {
+            Background-color: #e04e2c;
+        }
+
+        .login-link {
+            Display: inline-block;
+            Margin-top: 15px;
+            Font-size: 0.9em;
+            Color: #33C1FF;
+            Text-decoration: none;
+        }
+
+        .login-link:hover {
+            Text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <div class="register-content">
+            <h1>Register</h1>
+            <form>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                     
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+                </div>
+                <button type="submit" class="register-btn">Register</button>
+                <a href="login.html" class="login-link">Already have an account? Login</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

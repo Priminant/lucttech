@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>*	{
+Body, html {
+    Margin: 0;
+    Padding: 0;
+    Font-family: Arial, sans-serif;
+}
+
+
+Header {
+    Position: absolute;
+    Top: 0;
+    Width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    Display: flex;
+    Justify-content: space-between;
+    Align-items: center;
+    Padding: 10px 50px;
+    Background-color: black; 
+}
+
+.logo-img {
+    Width: 90px;
+    Height: auto;
+    margin-left: -49px;
+    margin-bottom 100px;
+}
+
+.navbar {
+    Display: flex;
+    Justify-content: space-between;
+    Align-items: center;
+    Padding: 10px 50px;
+    Background-color: rgba(0, 0, 0, 0.6); 
+}
+
+.nav-left {
+    List-style: none;
+    Margin: 0;
+    Padding: 0;
+    Display: flex;
+    Align-items: center;
+    Margin-left: 15px;
+}
+
+.nav-left a {
+    Text-decoration: none;
+    Color: white;
+    Font-weight: bold;
+    Padding: 10px 15px;
+    Border-radius: 5px;
+    Transition: background-color 0.3s ease;
+}
+
+.nav-left a:hover {
+    Background-color: #ff8800;
+    Color: #fff;
+}
+
+
+.nav-links {
+    List-style: none;
+    Display: flex;
+    Gap: 15px;
+}
+
+.nav-links a {
+  Text-decoration: none;
+    Color: white;
+    Font-weight: bold;
+    Padding: 10px 15px;
+    Border-radius: 5px;
+    Transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    Background-color: #ff8800;
+    Color: #fff;
+}
+
+.login-button {
+    Padding: 10px 20px;
+    Background: linear-gradient(135deg, #ff8800, #ff006e);
+    Color: white;
+    Border-radius: 25px;
+    Text-decoration: none;
+    Font-weight: bold;
+    Font-size: 16px;
+    Box-shadow: 0 8px 15px rgba(255, 0, 110, 0.5);
+    Transition: all 0.3s ease-in-out;
+} 
+.contact-container {
+  Display: flex;
+  Background: #ffffff;
+  Border-radius: 10px;
+  Overflow: hidden;
+  Box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  Max-width: 900px;
+  Width: 100%;
+}
+
+.form-section {
+  Padding: 40px;
+  Flex: 1;
+}
+
+.form-section h1 {
+  Font-size: 2rem;
+  Margin-bottom: 20px;
+  Color: #333;
+}
+
+Form {
+  Display: flex;
+  Flex-direction: column;
+}
+
+Form input,
+Form textarea {
+  Margin-bottom: 20px;
+  Padding: 10px 15px;
+  Font-size: 1rem;
+  Border: 1px solid #ddd;
+  Border-radius: 5px;
+  Outline: none;
+  Transition: border-color 0.3s ease;
+}
+
+Form input:focus,
+Form textarea:focus {
+  Border-color: #0077ff;
+}
+
+Form textarea {
+  Height: 100px;
+  Resize: none;
+}
+
+Form button {
+  Padding: 10px 15px;
+  Font-size: 1rem;
+  Background: #0077ff;
+  Color: #fff;
+  Border: none;
+  Border-radius: 5px;
+  Cursor: pointer;
+  Transition: background-color 0.3s ease;
+}
+
+Form button:hover {
+  Background: #005bb5;
+}
+
+.illustration-section {
+  Background: #f5f9ff;
+  Flex: 1;
+  Display: flex;
+  Justify-content: center;
+  Align-items: center;
+}
+
+.illustration-section img {
+  Max-width: 80%;
+}
+.footer {
+  Background-color: #000;
+  Color: #fff;
+  Padding: 40px 20px;
+  Font-size: 14px;
+}
+
+.footer-container {
+  Display: flex;
+  Justify-content: space-between;
+  Flex-wrap: wrap;
+}
+
+.footer-logo h2 {
+  Font-size: 24px;
+  Margin: 0 0 20px 0;
+}
+
+.social-icons a {
+  Margin-right: 10px;
+}
+
+
+.social-icons {
+    Display: flex;
+    Gap: 10px;
+    Justify-content: flex-start;
+}
+
+.social-icon {
+    Width: 30px;
+    Height: 30px;
+    Border-radius: 50%;
+    Transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    Transform: scale(1.2);
+}
+
+.feature-button {
+    Display: inline-block;
+    Margin-top: 10px;
+    Padding: 10px 15px;
+    Background-color: #ff8800;
+    Color: white;
+    Text-decoration: none;
+    Border-radius: 5px;
+    Font-size: 0.9em;
+    Font-weight: bold;
+}
+
+.feature-button:hover {
+    Background-color: #d62828;
+}
+
+.footer-links {
+  Display: flex;
+}
+
+.column {
+  Margin-right: 40px;
+}
+
+.column h3 {
+  Margin-bottom: 10px;
+  Font-size: 16px;
+  Font-weight: bold;
+}
+
+.column ul {
+  List-style: none;
+  Padding: 0;
+}
+
+.column ul li {
+  Margin-bottom: 8px;
+}
+
+.column ul li a {
+  Color: #fff;
+  Text-decoration: none;
+}
+
+.column ul li a:hover {
+  Text-decoration: underline;
+}
+
+.footer-subscribe {
+  Text-align: right;
+}
+
+.footer-subscribe p {
+  Margin-bottom: 10px;
+}
+
+.footer-subscribe button {
+  Background-color: #ff8800;
+  Color: #fff;
+  Border-radius: 5px;
+  Border: none;
+  Padding: 10px 20px;
+  Cursor: pointer;
+}
+
+.footer-subscribe button:hover {
+  Background-color: #d62828;
+}
+
+.footer-bottom {
+  Display: flex;
+  Justify-content: space-between;
+  Align-items: center;
+  Margin-top: 20px;
+  Border-top: 1px solid #333;
+  Padding-top: 20px;
+  Flex-wrap: wrap;
+}
+
+.footer-lippert {
+  Color: #fff;
+}
+
+.footer-policy-links a {
+  Margin-right: 15px;
+  Color: #fff;
+  Text-decoration: none;
+}
+
+.footer-policy-links a:hover {
+  Text-decoration: underline;
+}
+
+.footer-copyright {
+  Color: #fff;
+}
+
+    </style>
+</head>
+<body>
+ 
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="icons/LOGO.png" alt="LimkoTech Logo" class="logo-img">
+            </div>
+            <ul class="nav-left">
+                <li><a href="my-profile.html">My Account</a></li>
+            </ul>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="register.html">Sign Up</a></li>
+                <li><a href="login.html" class="login-button">Log In</a></li>
+            </ul>
+        </nav>
+    </header>
+  
+
+<div class="contact-container">
+    <div class="form-section">
+      <h1>Contact us</h1>
+      <form>
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+    <div class="illustration-section">
+      <img src="illustration.png" alt="Illustration">
+    </div>
+  </div>
+   <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>LUCT Tech Hub</h2>
+                <div class="social-icons">
+                    <a href=https://facebook.com target="_blank"><img src="icons/facebook-icon.png" alt="Facebook" class="social-icon"></a>
+                    <a href=https://instagram.com target="_blank"><img src="icons/instagram-icon.jpg" alt="Instagram" class="social-icon"></a>
+                    <a href=https://twitter.com target="_blank"><img src="icons/X-icon.jpg" alt="Twitter" class="social-icon"></a>
+                    <a href=https://youtube.com target="_blank"><img src="icons/youtube-icon.png" alt="YouTube" class="social-icon"></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                        <li><a href="downloads.html">Downloads</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>LUCT Tech Hub</h3>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="newsroom.html">Newsroom</a></li>
+                        <li><a href="affiliates.html">Affiliates</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-subscribe">
+                <p>Stay up to date on the latest from LUCT Tech Hub</p>
+                <button><a href="register.html" class="cta-button">Sign Up</a></button>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-lippert">
+                <span>VISIONBYTE</span>
+            </div>
+            <div class="footer-policy-links">
+                <a href="terms-and-conditions.html">Terms and Conditions</a>
+                <a href="warranty-shipping-reutrns.html">Shipping, Returns & Warranty</a>
+                <a href="trademark-copyright-guidelines.html">Trademark and Copyright Guidelines</a>
+                <a href="business-partner-code-of-conduct.html">Business Partner Code of Conduct</a>
+            </div>
+            <div class="footer-copyright">
+                <span>&copy; 2025 Copyright</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

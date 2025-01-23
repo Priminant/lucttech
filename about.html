@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        
+*	{
+Body, html {
+    Margin: 0;
+    Padding: 0;
+    Font-family: Arial, sans-serif;
+}
+
+
+Header {
+    Position: absolute;
+    Top: 0;
+    Width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    Display: flex;
+    Justify-content: space-between;
+    Align-items: center;
+    Padding: 10px 50px;
+    Background-color: black; 
+}
+
+.logo-img {
+    Width: 90px;
+    Height: auto;
+    margin-left: -49px;
+    margin-bottom 100px;
+}
+
+.navbar {
+    Display: flex;
+    Justify-content: space-between;
+    Align-items: center;
+    Padding: 10px 50px;
+    Background-color: rgba(0, 0, 0, 0.6); 
+}
+
+.nav-left {
+    List-style: none;
+    Margin: 0;
+    Padding: 0;
+    Display: flex;
+    Align-items: center;
+    Margin-left: 15px;
+}
+
+.nav-left a {
+    Text-decoration: none;
+    Color: white;
+    Font-weight: bold;
+    Padding: 10px 15px;
+    Border-radius: 5px;
+    Transition: background-color 0.3s ease;
+}
+
+.nav-left a:hover {
+    Background-color: #ff8800;
+    Color: #fff;
+}
+
+
+.nav-links {
+    List-style: none;
+    Display: flex;
+    Gap: 15px;
+}
+
+.nav-links a {
+  Text-decoration: none;
+    Color: white;
+    Font-weight: bold;
+    Padding: 10px 15px;
+    Border-radius: 5px;
+    Transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    Background-color: #ff8800;
+    Color: #fff;
+}
+
+.login-button {
+    Padding: 10px 20px;
+    Background: linear-gradient(135deg, #ff8800, #ff006e);
+    Color: white;
+    Border-radius: 25px;
+    Text-decoration: none;
+    Font-weight: bold;
+    Font-size: 16px;
+    Box-shadow: 0 8px 15px rgba(255, 0, 110, 0.5);
+    Transition: all 0.3s ease-in-out;
+}     
+        .about-section {
+            Padding: 50px 20px;
+            Display: flex;
+            Flex-direction: column;
+            Align-items: center;
+            Text-align: center;
+            Background-color: #ffffff;
+            Box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            Margin: 20px auto;
+            Border-radius: 8px;
+            Max-width: 900px;
+        }
+
+        .about-section h2 {
+            Font-size: 2em;
+            Margin-bottom: 20px;
+            Color: #0056b3;
+        }
+
+        .about-section p {
+            Font-size: 1.1em;
+            Color: #555;
+            Margin-bottom: 20px;
+        }
+
+        .about-section img {
+            Width: 100%;
+            Max-width: 400px;
+            Height: auto;
+            Border-radius: 8px;
+            Margin: 20px 0;
+            Box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Team Section */
+        .team-section {
+            Background: #f9f9f9;
+            Padding: 50px 20px;
+            Text-align: center;
+        }
+
+        .team-section h2 {
+            Font-size: 2em;
+            Margin-bottom: 30px;
+            Color: #0056b3;
+        }
+
+        .team-container {
+            Display: grid;
+            Grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            Gap: 20px;
+            Max-width: 1000px;
+            Margin: 0 auto;
+        }
+
+        .team-member {
+            Background: white;
+            Padding: 20px;
+            Border-radius: 8px;
+            Box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            Text-align: center;
+        }
+
+        .team-member img {
+            Width: 100px;
+            Height: 100px;
+            Border-radius: 50%;
+            Margin-bottom: 10px;
+            Box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-member h3 {
+            Font-size: 1.2em;
+            Margin-bottom: 5px;
+            Color: #333;
+        }
+
+        .team-member p {
+            Font-size: 0.9em;
+            Color: #777;
+        }
+
+       .footer {
+  Background-color: #000;
+  Color: #fff;
+  Padding: 40px 20px;
+  Font-size: 14px;
+}
+
+.footer-container {
+  Display: flex;
+  Justify-content: space-between;
+  Flex-wrap: wrap;
+}
+
+.footer-logo h2 {
+  Font-size: 24px;
+  Margin: 0 0 20px 0;
+}
+
+.social-icons a {
+  Margin-right: 10px;
+}
+
+
+.social-icons {
+    Display: flex;
+    Gap: 10px;
+    Justify-content: flex-start;
+}
+
+.social-icon {
+    Width: 30px;
+    Height: 30px;
+    Border-radius: 50%;
+    Transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    Transform: scale(1.2);
+}
+
+.feature-button {
+    Display: inline-block;
+    Margin-top: 10px;
+    Padding: 10px 15px;
+    Background-color: #ff8800;
+    Color: white;
+    Text-decoration: none;
+    Border-radius: 5px;
+    Font-size: 0.9em;
+    Font-weight: bold;
+}
+
+.feature-button:hover {
+    Background-color: #d62828;
+}
+
+.footer-links {
+  Display: flex;
+}
+
+.column {
+  Margin-right: 40px;
+}
+
+.column h3 {
+  Margin-bottom: 10px;
+  Font-size: 16px;
+  Font-weight: bold;
+}
+
+.column ul {
+  List-style: none;
+  Padding: 0;
+}
+
+.column ul li {
+  Margin-bottom: 8px;
+}
+
+.column ul li a {
+  Color: #fff;
+  Text-decoration: none;
+}
+
+.column ul li a:hover {
+  Text-decoration: underline;
+}
+
+.footer-subscribe {
+  Text-align: right;
+}
+
+.footer-subscribe p {
+  Margin-bottom: 10px;
+}
+
+.footer-subscribe button {
+  Background-color: #ff8800;
+  Color: #fff;
+  Border-radius: 5px;
+  Border: none;
+  Padding: 10px 20px;
+  Cursor: pointer;
+}
+
+.footer-subscribe button:hover {
+  Background-color: #d62828;
+}
+
+.footer-bottom {
+  Display: flex;
+  Justify-content: space-between;
+  Align-items: center;
+  Margin-top: 20px;
+  Border-top: 1px solid #333;
+  Padding-top: 20px;
+  Flex-wrap: wrap;
+}
+
+.footer-lippert {
+  Color: #fff;
+}
+
+.footer-policy-links a {
+  Margin-right: 15px;
+  Color: #fff;
+  Text-decoration: none;
+}
+
+.footer-policy-links a:hover {
+  Text-decoration: underline;
+}
+
+.footer-copyright {
+  Color: #fff;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="icons/LOGO.png" alt="LimkoTech Logo" class="logo-img">
+            </div>
+            <ul class="nav-left">
+                <li><a href="my-profile.html">My Account</a></li>
+            </ul>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="register.html">Sign Up</a></li>
+                <li><a href="login.html" class="login-button">Log In</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    <section class="about-section">
+        <h2>About Us</h2>
+        <p>
+            Our company was founded with the mission to provide innovative solutions and exceptional customer service. 
+            We are passionate about what we do and strive to create a positive impact in the lives of our customers.
+        </p>
+        <img src="images/team.jpeg" alt="Our Team">
+        <p>
+            Over the years, we have built a strong reputation for reliability, quality, and excellence. 
+            Our team is made up of dedicated professionals who are always ready to go the extra mile to meet your needs.
+        </p>
+    </section>
+
+ 
+    <section class="team-section">
+        <h2>Meet Our Team</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="images/takhona.png" alt="Team Member">
+                <h3>Phumlile Dlamini</h3>
+                <p>Project Manager</p>
+            </div>
+            <div class="team-member">
+                <img src="images/mayibongwe.png" alt="Team Member">
+                <h3>mayibongwe Maseko</h3>
+                <p>Frontend Developer</p>
+            </div>
+            <div class="team-member">
+                <img src="images/phumlile.png" alt="Team Member">
+                <h3>Takhona Manyatsi</h3>
+                <p>UI/UX Designer</p>
+            </div>
+    
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>LUCT Tech Hub</h2>
+                <div class="social-icons">
+                    <a href=https://facebook.com target="_blank"><img src="icons/facebook-icon.png" alt="Facebook" class="social-icon"></a>
+                    <a href=https://instagram.com target="_blank"><img src="icons/instagram-icon.jpg" alt="Instagram" class="social-icon"></a>
+                    <a href=https://twitter.com target="_blank"><img src="icons/X-icon.jpg" alt="Twitter" class="social-icon"></a>
+                    <a href=https://youtube.com target="_blank"><img src="icons/youtube-icon.png" alt="YouTube" class="social-icon"></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="downloads.html">Downloads</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>LUCT Tech Hub</h3>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="newsroom.html">Newsroom</a></li>
+                        <li><a href="affiliates.html">Affiliates</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-subscribe">
+                <p>Stay up to date on the latest from LUCT Tech Hub</p>
+                <button><a href="register.html" class="cta-button">Sign Up</a></button>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-lippert">
+                <span>VISIONBYTE</span>
+            </div>
+            <div class="footer-policy-links">
+                <a href="terms&conditions.html">Terms and Conditions</a>
+                <a href="warranty.html">Shipping, Returns & Warranty</a>
+                <a href="copyright.html">Trademark and Copyright Guidelines</a>
+                <a href="coc.html">Business Partner Code of Conduct</a>
+            </div>
+            <div class="footer-copyright">
+                <span>&copy; 2024 Copyright</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
